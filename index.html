@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEV Solutions — Desenvolvimento de Aplicativos</title>
+<meta name="description" content="BEV Solutions desenvolve aplicativos móveis e soluções de software sob medida. Entre em contato: varela@bevsolutions.app.br">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#171A21;
+    --muted:#5B616E;
+    --paper:#FFFFFF;
+    --wash:#F3F5F9;
+    --indigo:#2748C4;
+    --indigo-dark:#1B3390;
+    --line:#E3E6EC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+  header{
+    border-bottom:1px solid var(--line);
+    padding:20px 0;
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+  .mark{
+    width:38px;height:38px;border-radius:10px;
+    background:linear-gradient(135deg,var(--indigo),var(--indigo-dark));
+    color:#fff;display:flex;align-items:center;justify-content:center;
+    font-family:'Sora',sans-serif;font-weight:700;font-size:19px;
+  }
+  .brand strong{font-family:'Sora',sans-serif;font-size:17px;letter-spacing:-.01em}
+  .nav a.link{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;margin-left:24px}
+  .nav a.link:hover{color:var(--indigo)}
+
+  .hero{
+    padding:88px 0 72px;
+    background:
+      radial-gradient(circle at 1px 1px, var(--line) 1px, transparent 0) 0 0/26px 26px,
+      var(--paper);
+  }
+  .hero .eyebrow{
+    font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--indigo);margin-bottom:16px;
+  }
+  .hero h1{
+    font-family:'Sora',sans-serif;font-weight:700;
+    font-size:clamp(32px,5.5vw,52px);line-height:1.12;letter-spacing:-.02em;
+    max-width:640px;
+  }
+  .hero p{margin-top:20px;max-width:560px;font-size:18px;color:var(--muted)}
+  .hero .cta{
+    display:inline-block;margin-top:32px;background:var(--indigo);color:#fff;
+    text-decoration:none;font-weight:600;font-size:15px;
+    padding:13px 26px;border-radius:10px;
+  }
+  .hero .cta:hover{background:var(--indigo-dark)}
+  .hero .cta:focus-visible,a:focus-visible{outline:3px solid var(--indigo);outline-offset:3px}
+
+  section{padding:64px 0}
+  .section-title{
+    font-family:'Sora',sans-serif;font-weight:700;font-size:26px;letter-spacing:-.01em;
+    margin-bottom:32px;
+  }
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+  .card{
+    background:var(--wash);border:1px solid var(--line);border-radius:14px;
+    padding:26px;
+  }
+  .card h3{font-family:'Sora',sans-serif;font-size:17px;font-weight:600;margin-bottom:8px}
+  .card p{font-size:15px;color:var(--muted)}
+  .card .icon{
+    width:34px;height:34px;border-radius:9px;background:#fff;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+    color:var(--indigo);font-size:17px;
+  }
+
+  .contact{background:var(--wash);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .contact p{color:var(--muted);max-width:540px}
+  .contact .email{
+    display:inline-block;margin-top:18px;font-family:'Sora',sans-serif;font-weight:600;
+    font-size:clamp(18px,3vw,24px);color:var(--indigo);text-decoration:none;
+    border-bottom:2px solid var(--indigo);padding-bottom:2px;
+  }
+
+  footer{padding:36px 0;font-size:13px;color:var(--muted)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer a{color:var(--muted)}
+  footer a:hover{color:var(--indigo)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#"><span class="mark">B</span><strong>BEV Solutions</strong></a>
+    <nav>
+      <a class="link" href="#servicos">Serviços</a>
+      <a class="link" href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Software &amp; Aplicativos</div>
+    <h1>Aplicativos e sistemas sob medida, do conceito à publicação.</h1>
+    <p>A BEV Solutions desenvolve aplicativos móveis e soluções de software para empresas e organizações, cuidando de todo o ciclo: projeto, desenvolvimento, publicação nas lojas e manutenção.</p>
+    <a class="cta" href="#contato">Fale com a gente</a>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap">
+    <h2 class="section-title">O que fazemos</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Aplicativos móveis</h3>
+        <p>Apps Android e iOS desenvolvidos sob medida e publicados na Google Play e na App Store.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚙️</div>
+        <h3>Sistemas e integrações</h3>
+        <p>Ferramentas internas, automações e integrações entre sistemas para simplificar a operação do dia a dia.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔄</div>
+        <h3>Manutenção e evolução</h3>
+        <p>Acompanhamento contínuo dos aplicativos publicados: atualizações, correções e novas funcionalidades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contact">
+  <div class="wrap">
+    <h2 class="section-title">Contato</h2>
+    <p>Quer conversar sobre um projeto ou tirar dúvidas sobre nossos aplicativos? Escreva para a gente:</p>
+    <a class="email" href="mailto:varela@bevsolutions.app.br">varela@bevsolutions.app.br</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 BEV Solutions Serviços de Desenvolvimento de Software LTDA · CNPJ 35.742.047/0001-05</span>
+    <a href="privacidade.html">Política de Privacidade</a>
+  </div>
+</footer>
+
+</body>
+</html>
