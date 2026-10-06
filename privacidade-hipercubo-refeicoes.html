@@ -88,7 +88,7 @@
     <h2>4. Security</h2>
     <ul>
       <li>Passwords are never stored in plain text: the server stores only a one-way hash (bcrypt).</li>
-      <li>Data is sent to the institution's server over HTTPS (encrypted in transit) when the server is reachable over the internet. Unencrypted connections are only allowed for servers on the institution's private local network.</li>
+      <li>All communication between the App and the server (<code>https://sistemashipercubo.com.br</code>) uses HTTPS/TLS encryption in transit. The App blocks unencrypted (HTTP) connections.</li>
       <li>Access to the administrative panel is restricted to users with specific permissions defined by the institution.</li>
     </ul>
 
@@ -152,7 +152,7 @@
     <h2>4. Segurança</h2>
     <ul>
       <li>Senhas nunca são armazenadas em texto puro: o servidor guarda apenas um hash irreversível (bcrypt).</li>
-      <li>Os dados são enviados ao servidor da instituição via HTTPS (criptografados em trânsito) quando o servidor é acessado pela internet. Conexões sem criptografia são permitidas apenas para servidores na rede local privada da instituição.</li>
+      <li>Toda a comunicação entre o Aplicativo e o servidor (<code>https://sistemashipercubo.com.br</code>) usa criptografia HTTPS/TLS em trânsito. O Aplicativo bloqueia conexões sem criptografia (HTTP).</li>
       <li>O acesso ao painel administrativo é restrito a usuários com permissões específicas definidas pela instituição.</li>
     </ul>
 
